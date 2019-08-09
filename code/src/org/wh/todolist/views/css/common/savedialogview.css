@@ -1,0 +1,39 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#saveDialogView {
+    -fx-background-color: main-color;
+}
+
+.form .desc {
+    -fx-font: 14px 'Maiandra GD';
+    -fx-content-display: graphic-only;
+}
+
+.form {
+    -fx-padding: 10px 20px 10px 20px;
+    -fx-spacing: 35px;
+}
+
+.form .ligne {
+    -fx-alignment: center-left;
+    -fx-spacing: 5px;
+}
+
+.save-button {
+    -fx-background-color: pressed-color;
+    -fx-background-radius: 0px;
+}
+
+.save-button:hover {
+    -fx-background-color: hovered-color;
+}
+
+.save-button:pressed {
+    -fx-background-color: pressed-color;
+}
+
+.form .text-field {
+    -fx-font-size: 14px;
+}

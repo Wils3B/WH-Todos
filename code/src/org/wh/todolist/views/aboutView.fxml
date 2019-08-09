@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER" style="-fx-background-color: #4E6A9C;">
+            <children>
+                <Label text="A propos de WH TodoList" textFill="WHITE">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0"/>
+            </padding>
+        </HBox>
+        <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" scrollLeft="1.0" scrollTop="1.0"
+                  text="WH Todos est un utilitaire pour enregistrer vos listes de tâches et choses à faire.&#10;Pour commencer, saisissez juste une tâche que vous allez faire dans la zone de saisie de l'application puis appuyez sur entrez.&#10;&#10;Date de publication: Juillet 2019&#10;Auteur: Wilson Gouanet&#10;Version: 1.0.1&#10;Licence: GPL V3&#10;Langue: Français&#10;&#10;Pour toute remarque ou suggestion, veuillez adresser un mail à l'adresse &lt;wilstito@gmail.com&gt; avec pout objet &quot;WH TODOS&quot;&#10;&#10;(c) Wilbitys House, Juillet 2019"
+                  wrapText="true" VBox.vgrow="ALWAYS"/>
+    </children>
+</VBox>

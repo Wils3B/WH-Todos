@@ -1,0 +1,15 @@
+.button {
+    -fx-background-color: pressed-color;
+    -fx-background-radius: 0px;
+    -fx-padding: 3px;
+    -fx-pref-width: 90px;
+    -fx-font-size: 13px;
+}
+
+.button:hover {
+    -fx-background-color: hovered-color;
+}
+
+.button:pressed {
+    -fx-background-color: selected-color;
+}

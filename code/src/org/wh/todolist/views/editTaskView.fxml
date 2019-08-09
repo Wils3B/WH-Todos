@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="editTaskView" prefHeight="350.0" prefWidth="420.0" styleClass="box-central"
+      xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.wh.todolist.controllers.EditTaskController">
+    <children>
+        <HBox id="upBar" alignment="CENTER_LEFT" spacing="10.0">
+            <children>
+                <Button fx:id="retour" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                        styleClass="danger-btn" text="Back">
+                    <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/delete_sign_white_32px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Retour"/>
+                    </tooltip>
+                </Button>
+                <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label text="Editer la tâche">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@images/edit_property_24px.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font size="20.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Button fx:id="valider" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity"
+                        mnemonicParsing="false" styleClass="valid-btn" text="Valider">
+                    <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/checkmark_filled_white_50px.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Valider"/>
+                    </tooltip>
+                </Button>
+            </children>
+        </HBox>
+        <Separator prefWidth="200.0" style="-fx-pref-height: 2;"/>
+        <VBox prefHeight="250.0" prefWidth="410.0" styleClass="form" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox styleClass="ligne">
+                    <children>
+                        <Label styleClass="desc" text="Libellé">
+                            <graphic>
+                                <ImageView preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/ball_point_pen_24px.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                        <TextArea fx:id="libelle" prefHeight="200.0" prefWidth="200.0"
+                                  promptText="Libellé de la tâche à accomplir" wrapText="true" HBox.hgrow="ALWAYS"/>
+                    </children>
+                </HBox>
+                <HBox styleClass="ligne">
+                    <children>
+                        <Label styleClass="desc" text="Heure deFin">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@images/task_planning_24px.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                        <JFXTimePicker fx:id="hFin" promptText="Heure de fin"/>
+                    </children>
+                </HBox>
+                <HBox styleClass="ligne">
+                    <children>
+                        <Label styleClass="desc" text="Date de fin">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@images/stop_24px.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                        <JFXDatePicker fx:id="dFin" promptText="Date de fin"/>
+                    </children>
+                </HBox>
+                <HBox styleClass="ligne">
+                    <children>
+                        <Label styleClass="desc" text="Détails">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@images/view_details_24px.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                        <TextArea fx:id="detail" prefHeight="200.0" prefWidth="200.0" promptText="Détails sur la tâche"
+                                  wrapText="true" HBox.hgrow="ALWAYS"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0"/>
+    </padding>
+    <stylesheets>
+        <URL value="@css/common/centralview.css"/>
+        <URL value="@css/common/edittaskview.css"/>
+    </stylesheets>
+</VBox>

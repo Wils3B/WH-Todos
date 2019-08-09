@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Main-Class: org.wh.todolist.Main
+Application-Name: WH Todos
+Application-Version: 1.0
+Application-Description: Les listes de tâches par WH
+JavaFX-Version: 8.0
+JavaFX-Application-Class: org.wh.todolist.Main
+Created-By: Wilson Gouanet
+Implementation-Vendor: Wilbitys House
