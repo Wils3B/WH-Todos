@@ -1,0 +1,19 @@
+
+.root {
+    main-color: #faa5ce;
+    hr-color: rgb(40, 40, 40);
+    selected-color: coral;
+    pressed-color: lightcoral;
+    pressed-color-alt: darkorange;
+    hovered-color: gray;
+    hovered-color-alt: lightgray;
+    unfinished-text-color: black;
+    finished-text-color: #555555;
+    valid-color: #3eca3e;
+    danger-color: #cc0000;
+}
+
+.separator:horizontal .line {
+    -fx-border-color: hr-color transparent transparent transparent,
+    -fx-shadow-highlight-color transparent transparent transparent;
+}

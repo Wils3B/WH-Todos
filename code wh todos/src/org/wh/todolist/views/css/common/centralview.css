@@ -1,0 +1,232 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#todoView {
+    -fx-background-color: main-color;
+}
+
+#upBar {
+}
+
+#upBar .button {
+    -fx-content-display: graphic-only;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-border-radius: 0;
+}
+
+#upBar .text-field {
+    -fx-background-color: transparent;
+}
+
+#subBar {
+
+}
+
+#subBar .button {
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 32px;
+}
+
+#subBar .toggle-button {
+    -fx-background-radius: 13px 13px 0 0;
+    -fx-border-radius: 13px 13px 0 0;
+    -fx-border-width: 2px 2px 0 2px;
+    -fx-background-color: transparent;
+    -fx-pref-height: 34px;
+    -fx-pref-width: 60px;
+}
+
+#subBar .toggle-button:selected {
+    -fx-background-color: selected-color;
+    -fx-border-color: derive(selected-color, -30%);
+}
+
+#subBar .button:hover {
+    -fx-background-color: hovered-color;
+    -fx-border-color: derive(hovered-color, -30%);
+}
+
+#subBar .button:pressed {
+    -fx-background-color: pressed-color-alt;
+}
+
+#taskList {
+    -fx-background-color: main-color;
+    -fx-pref-height: 248px;
+    -fx-pref-width: 400px;
+    -fx-spacing: 1px;
+}
+
+#taskList .button {
+    -fx-background-color: transparent;
+    -fx-pref-height: 28px;
+    -fx-pref-width: 28px;
+    -fx-min-height: 28px;
+    -fx-min-width: 28px;
+}
+
+#taskList .check-box {
+    -fx-pref-height: 28px;
+    -fx-pref-width: 28px;
+    -fx-min-height: 28px;
+    -fx-min-width: 28px;
+}
+
+#taskList .button:hover {
+    -fx-background-color: rgb(225, 225, 225);
+}
+
+#taskList .button:pressed {
+    -fx-background-color: pressed-color;
+}
+
+#taskList .taskView {
+    -fx-padding: 0px 4px 0px 5px;
+}
+
+#taskList .text {
+    -fx-font-size: 16px;
+    -fx-font: 16px 'Maiandra GD';
+}
+
+.taskView .text {
+    -fx-font-size: 16px;
+    -fx-font: 16px 'Maiandra GD';
+}
+
+.text-finished-task {
+    -fx-fill: finished-text-color;
+    -fx-font-size: 16px;
+}
+
+.text-unfinished-task {
+    -fx-fill: unfinished-text-color;
+    -fx-font-size: 16px;
+}
+
+.btns-box{
+    -fx-max-width: 100px;
+    -fx-pref-width: 100px;
+    -fx-alignment: center;
+    -fx-background-color: main-color;
+    -fx-border-width: 0 5px 0 0;
+    -fx-border-color: derive(main-color, -60%);
+}
+
+/** CSS **/
+/* The main scrollbar **track** CSS class  */
+.scroll-pane .scroll-bar:horizontal .track,
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius: 2em;
+}
+
+.scroll-pane .scroll-bar:horizontal,
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+.scroll-pane .scroll-bar:horizontal .increment-button,
+.scroll-pane .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 0 10 0;
+
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 10 0 0;
+
+}
+
+.scroll-pane .scroll-bar .increment-arrow,
+.scroll-pane .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.scroll-pane .scroll-bar:horizontal .thumb,
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(main-color, -40%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+
+/* ------------------------------------------------------------------------------------- */
+/** EVENT CSS **/
+/* ------------------------------------------------------------------------------------- */
+
+/* The main scrollbar **track** CSS class on event of "hover" and "pressed" */
+
+.scroll-pane .scroll-bar:horizontal:hover .track,
+.scroll-pane .scroll-bar:horizontal:pressed .track,
+.scroll-pane .scroll-bar:vertical:hover .track,
+.scroll-pane .scroll-bar:vertical:pressed .track {
+    -fx-background-color: derive(main-color, -60%);
+    -fx-border-radius: 2em;
+    -fx-opacity: 0.2;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: derive(main-color, -70%);
+}
+
+.scroll-pane .scroll-bar .thumb:pressed {
+    -fx-background-color: derive(main-color, -80%);
+}
+
+#addTask {
+    -fx-font-size: 18px;
+}
+
+.box-central {
+    -fx-padding: 0;
+    -fx-spacing: 0;
+}
+
+.valid-btn {
+    -fx-background-color: valid-color;
+}
+
+.danger-btn {
+    -fx-background-color: danger-color;
+}
+
+.valid-btn:hover {
+    -fx-background-color: derive(valid-color, -20%);
+}
+
+.danger-btn:hover {
+    -fx-background-color: derive(danger-color, -20%);
+}
+
+.valid-btn:pressed {
+    -fx-background-color: derive(valid-color, -40%);
+}
+
+.danger-btn:pressed {
+    -fx-background-color: derive(danger-color, -40%);
+}
+
